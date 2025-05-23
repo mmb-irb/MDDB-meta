@@ -1,0 +1,9 @@
+name: mddb_meta
+channels:
+  - conda-forge
+dependencies:
+  - notebook
+  - plotly
+  - nglview
+  - simpletraj
+  - mdtraj
