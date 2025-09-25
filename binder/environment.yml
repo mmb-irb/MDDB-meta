@@ -4,6 +4,7 @@ channels:
 dependencies:
   - notebook
   - plotly
+  - seaborn
   - nglview
   - simpletraj
   - mdtraj
