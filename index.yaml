@@ -1,0 +1,105 @@
+- id: tutorials
+  title: Tutorials
+  docs: |
+    Basic examples showing how to interact with the API.
+  entries:
+
+  - id: browsing
+    title: Browsing projects
+    docs: |
+      This tutorial shows an example of how to browse among the different entries (projects). 
+      Each project contains metadata such as names of the authors, parameters of the simulation, etc.
+    notebook: browse_tutorial.ipynb
+
+  - id: projects
+    title: Mining project data
+    docs: |
+      This tutorial shows an example of how to mine data from a specific project. 
+      The project is the main entry in the database and it contains mostly metadata, 
+      but it is also an index of additional data which may be requested as well.
+    notebook: project_tutorial.ipynb
+
+  - id: trajectory
+    title: Visualizing trajectory data
+    docs: |
+      This tutorial shows an example of how to download structure and trajectory data 
+      from a specific project. Then data is loaded into a molecular viewer and displayed.
+    notebook: trajectory_tutorial.ipynb
+
+- id: precalculated
+  title: Pre-calculated analyses
+  docs: |
+    Examples reproducing how some of the pre-calculated analyses are done by the automatic workflow.
+  entries:
+
+  - id: rmsd
+    title: RMSD analysis
+    docs: |
+      In this example we reproduce the pre-calculated root mean squared deviation analysis (RMSD) performed by the data processing workflow.
+    notebook: rmsd_analysis.ipynb
+
+  - id: rmsf
+    title: Fluctuation analysis
+    docs: |
+      In this example we reproduce the pre-calculated atom fluctuation analysis (RMSF) performed by the data processing workflow.
+    notebook: rmsf_analysis.ipynb
+
+  - id: rgyr
+    title: Radius of gyration analysis
+    docs: |
+      In this example we reproduce the pre-calculated radius of gyrations analysis (RGYR) performed by the data processing workflow.
+    notebook: rgyr_analysis.ipynb
+
+- id: single
+  title: Single trajectory analyses
+  docs: |
+    Additional analyses which are not run by default but any user may run in any available simulation.
+  entries:
+
+  - id: clustering
+    title: Clustering analysis
+    docs: |
+      Here we show an example of an alternative methodology for clustering.
+    notebook: clustering.ipynb
+
+  - id: dccm
+    title: Dynamic Cross-Correlation Matrix
+    docs: |
+      Here is an additional analysis: the Dynamic Cross-Correlation Matrix.
+    notebook: dccm.ipynb
+
+- id: usecases
+  title: Meta-analysis use cases
+  docs: |
+    Analyses run over several simulations.
+  entries:
+
+  - id: protein_ligands
+    title: Protein-ligands interaction analysis
+    docs: |
+      In this example we intend to analyze simulations of ACE2 protein with different ligands (drugs).
+      We aim to compare, for each ligand, how both electrostatic and Van de Waals energies change.
+      For this test we are using 78 atomistic MD trajectories from D. E. Shaw already loaded in the MDDB database.
+    notebook: ace2_ligands_analysis.ipynb
+
+  - id: protein_protein
+    title: Protein-protein interaction analysis
+    docs: |
+      In this example we intend to analyze the interaction between human angiotensin converting enzyme 2 (ACE2) 
+      and the SARS-CoV-2 spike RBD domain. We want to compare, for the N501Y mutation, how electrostatic energies, 
+      Van der Waals energies and hydrogen bonds change on this residue and its surrounding residues.
+
+      For this test we will use RBD-ACE2 atomistic MD trajectories already loaded in the MDDB database. 
+      Specifically, we will use a group of simulations from Mary Hongying Cheng including different varaints of the virus.
+    notebook: ace2_rbd_interaction_analysis.ipynb
+
+  - id: protein_nucleic
+    title: Protein-nucleic acid interaction analysis
+    docs: |
+      In this example we intend to analyze the interaction between the SARS-CoV-2 polymerase complex and a fragment of RNA. 
+      We want to find and visualize the aminoacid with the highest electrostatic and Van der Waals energies and thus the one 
+      which is carrying the interaction.
+
+      For this test we will use Polymerase atomistic MD trajectories already loaded in the MDDB database from 
+      different groups.
+    notebook: polymerase_analysis.ipynb
